@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box}
+      
+    
+    /* Full-width input fields */
+    input[type=text] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    button:hover {
+      opacity:1;
+    }
+    
+    /* Extra styles for the cancel button */
+    
+    /* Float cancel and signup buttons and add an equal width */
+    
+    
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+      padding-left:25%;
+      width: 70%;
+      height: 50%;
+      
+    }
+    
+    
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+       .signupbtn {
+         width: 100%;
+      }
+    }
+    </style>
+</head>
+<body  style="background-color:rgba(122, 176, 184, 0.718);">
+
+<div class="container">
+    <center><h2>Update Form </h2> </center> 
+    <hr>
+    
+    <form action="/updating" method="POST" enctype="multipart/form-data">
+
+
+        <input type="text"  name="id" value="<%= id %>"><br><br>
+          <label>FullName</label>
+          <input type="text" placeholder="Enter FullName" name="fullName" value="<%= fullName %>" ><br><br>
+
+          <label>DateOfBirth</label>
+          <input type="date" placeholder="Enter DOB" name="dateOfBirth" value="<%= dateOfBirth%>" ><br><br>
+
+          <label>Gender</label>
+          <input type="text" placeholder="Enter Gender" name="gender" value="<%= gender %>" ><br><br>
+
+          <label>Nationality</label>
+          <input type="text" placeholder="Enter Nationality" name="nationality" value="<%= nationality %>"><br><br>
+
+          <label>PlaceOfBirth</label>
+          <input type="text" placeholder="Enter Place and country of Birth" name="placeOfBirth" value="<%= placeOfBirth %>">
+
+          <label>MaritalStatus</label>
+          <input type="text" placeholder="Enter MaritalStatus" name="maritalStatus" value="<%= maritalStatus %>"><br><br>
+
+          <label>FatherName</label>
+          <input type="text" placeholder="Enter FatherName" name="fatherName" value="<%= fatherName %>"><br><br>
+
+          <label>DocumentType</label>
+          <input type="text" placeholder="Enter Documenttype" name="documentType" value="<%= documentType %>" ><br><br>
+
+          <label>DocumentNumber</label>
+          <input type="text" placeholder="Enter Documentnumber" name="documentNumber" value="<%= documentNumber %>"><br><br>
+
+          <label>IssuingAuthority</label>
+          <input type="text" placeholder="Enter Issuingauthority" name="issuingAuthority" value="<%= issuingAuthority %>"><br><br>
+
+          <label>Expirydate</label>
+          <input type="date" placeholder="Enter Expirydate" name="expiryDate" value="<%= expiryDate %>"><br><br>
+
+          <label>ResidentialAddress</label>
+          <input type="text" placeholder="Enter Residentialaddress" name="residentialAddress" value="<%= residentialAddress %>"><br><br>
+
+          <label>ProofOfAddress</label>
+          <input type="file" placeholder="Proof Of Address" name="proofOfAddress" value="<%= proofOfAddress %>"><br><br>
+
+
+          <label>PhoneNumber</label>
+          <input type="text" placeholder="Enter mobileNumber" name="phoneNumber" value="<%= phoneNumber %>" ><br><br>
+
+          <label>email</label>
+          <input type="email" placeholder="Enter email" name="email" value="<%= email %>"><br><br>
+
+          <label>Photo</label>
+          <input type="file" placeholder="Photo" name="photo" value="<%= photo %>"><br><br>
+
+          <label>Occupation</label>
+          <input type="text" placeholder="Enter Occupation" name="occupation" value="<%= occupation %>"><br><br>
+
+          <label>SourceOfFunds</label>
+          <input type="text" placeholder="Source Of Funds" name="sourceOfFunds" value="<%= sourceOfFunds %>" ><br><br>
+
+          <label>AnnualIncome</label>
+          <input type="text" placeholder="Enter Annualincome" name="annualIncome" value="<%= annualIncome %>"><br><br>
+
+          <label>PAN</label>
+          <input type="text" placeholder="Enter PAN Number" name="PAN" value="<%= PAN %>"><br><br>
+
+
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Update</button>
+          </div>
+        </div>
+    </form>
+</body>
+</html>
