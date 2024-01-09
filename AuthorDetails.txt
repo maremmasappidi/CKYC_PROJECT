@@ -2,4 +2,5 @@ AuthorNmae:Maremma
 company name:techwave
 role :softwaredeveloper
 location:hyd
+project:fintech
 
