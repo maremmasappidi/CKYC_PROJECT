@@ -1,11 +1,8 @@
 const { resolveHostname } = require("nodemailer/lib/shared");
 const Customer = require("../models/customer");
-
 //******* Insert: ***********
-
 exports.insertCustomerDetails = async (req, res) => {
-
-    const newCustomer = Customer(
+ const newCustomer = Customer(
         req.body,
     );
     if(req.files){
@@ -20,7 +17,6 @@ exports.insertCustomerDetails = async (req, res) => {
               console.log(error.length)
               return res.status(400).json(error)
             }
-          
             newCustomer.save();
             //res.status(201).send(newCustomer);
             res.render('document');
@@ -89,21 +85,6 @@ exports.insertCustomerDetails = async (req, res) => {
      });
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
 
    //********* Update: **********
 
