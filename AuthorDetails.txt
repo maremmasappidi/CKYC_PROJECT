@@ -3,5 +3,5 @@ company name:techwave
 role :softwaredeveloper
 location:hyd
 project:fintech
-cpmanyname:maremma
+company :techwave
 
